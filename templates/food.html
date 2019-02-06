@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='css/food.css') }}">
+    </head>
+    <ul>
+        <li class="arial"><a href="./">Food</a></li>
+    </ul><br>
+    <body>
+        <div class="body">
+        <h1 class="body title">GENERATE A RANDOM PLACE TO EAT</h1>
+        <p class="arial">Enter your search term, state, and city:</p>
+        <form method="post" action="./">
+            <div class="arial">
+                <label class="arial" for="term">What do you want to eat (ex. sushi breakfast etc.)</label><br>
+                <input type="text" name="term">
+            </div><br>
+            <div class="arial">
+                <label for="state">State</label><br>
+                <input type="text"  name="state"><br>
+            </div><br>
+            <div class="arial">
+                <label for="city">City</label><br>
+                <input type="text" name="city"><br>
+            </div><br>
+            <p class="arial"><input class="arial" type="submit" value="Find restaraunts"/></p>
+        </div>
+        </form>
+    </body>
+</html>
